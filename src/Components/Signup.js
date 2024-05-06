@@ -1,24 +1,24 @@
 import React from "react";
-// import book from "./book.jpg";
+import background from '../assets/SIGNUP IMAGE.jpg';
+
 const Signup = () => {
   return (
     <div>
-      <div className="px-10">
-        <div className="border-2  rounded-lg border-slate-100  mt-7 bg-slate-100  font-mono text-5xl font-black antialiased text-center ">
-          Get In As!
+
+      <div className="h-screen overflow-hidden"> 
+        <img src={background} alt="Background" className="w-full h-full object-cover fixed top-0 left-0 z-0" />
+        
+        <div className="absolute top-0 left-0 flex flex-col justify-center h-full ml-4 z-10" style={{ marginLeft: 'calc(25vh + 200px)' }}>
+          
+        
+          <button type="button" className="text-white bg-gradient-to-r from-cyan-700 to-blue-900 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-large rounded-lg text-5xl px-8 py-4 text-center me-2 mb-8">Student</button>
+          <button type="button" className="text-white bg-gradient-to-r from-cyan-700 to-blue-900 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-5xl px-8 py-4 text-center me-2 mb-8">Professor</button>
+          <button type="button" className="text-white bg-gradient-to-r from-cyan-700 to-blue-900 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-5xl px-8 py-4 text-center me-2 mb-8">Admin</button>
+          
         </div>
-        <div className="mt-10 flex justify-center">
-          <button className="border-2 rounded-lg hover:m-4 border-black bg-black text-white w-1/6 h-40 m-5">
-            Student
-          </button>
-          <button className="border-2 rounded-lg hover:m-4 border-black bg-black text-white w-1/6 h-40 m-5">
-            Professor
-          </button>
-          <button className="border-2 rounded-lg m-5 hover:m-4 border-black bg-black text-white w-1/6 h-40">
-            Admin
-          </button>
-        </div>
-      </div>
+        
+      </div>  
+    
     </div>
   );
 };
